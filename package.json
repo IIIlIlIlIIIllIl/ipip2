@@ -1,0 +1,32 @@
+{
+  "name": "ipip2",
+  "version": "2.2.0",
+  "main": "lib/ipip.js",
+  "description": "Query geolocation information from IP",
+  "homepage": "http://tool.17mon.cn",
+  "bin": {
+    "ipip": "./cli.js"
+  },
+  "license": "MIT",
+  "files": [
+    "lib",
+    "cli.js",
+    "install.js"
+  ],
+  "scripts": {
+    "postinstall": "node install.js",
+    "test": "make test-all"
+  },
+  "keywords": [
+    "ip",
+    "isp",
+    "geolocation",
+    "lookup"
+  ],
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4"
+  }
+}
